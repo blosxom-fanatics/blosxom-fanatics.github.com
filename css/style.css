@@ -6,20 +6,59 @@ body {
   height: 100%;
 }
 
-h1 a {
-  margin: -55px 0 0 -55px;
+h1 {
+  margin: -55px 0 0 0;
   padding: 0;
-  display: block;
   position: absolute;
   top: 50%;
-  left: 50%;
-  width: 110px;
-  height: 110px;
+  left: 186px;
   overflow: hidden;
 }
 
-h1 a:before {
+h1 a {
+  margin: 0 7px;
+  display: block;
   width: 110px;
   height: 110px;
+}
+
+h1 a:before {
+  width: 100%;
+  height: 100%;
   content: url("../img/blosxom.png");
+}
+
+#members {
+  margin: -24px 0 0 0;
+  position: absolute;
+  top: 50%;
+  left: 310px;
+}
+
+#members ul {
+  margin: 0;
+  padding: 0;
+}
+
+#members li {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+#members li a {
+  margin: 0 7px;
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  text-decoration: none;
+}
+
+#members li a:before {
+  display: block;
+  width: 100%;
+  height: 100%;
+  content: "\00a0";
 }

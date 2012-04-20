@@ -6,11 +6,36 @@
 
     <title>Blosxom Fanatics</title>
 
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
 
     <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
   </head>
   <body>
     <h1><a href="https://github.com/blosxom-fanatics">Blosxom Fanatics</a></h1>
+
+    <div id="members"></div>
+    <script>
+      var listMembers = function (res) {
+        var ul = [
+          '<ul>'
+        ];
+
+        for (var i = 0, l = res.data.length; i < l; i+=1) {
+          var member = res.data[i],
+            angle = 30 * i;
+          ul.push(
+            '<li>',
+            '<a href="https://github.com/' + member.login + '" style="background-image:url(' + member.avatar_url + '&amp;s=48)">',
+            member.login,
+            '</a>',
+            '</li>'
+          );
+        }
+
+        ul.push('</ul>');
+        document.getElementById('members').innerHTML = ul.join('');
+      };
+    </script>
+    <script src="https://api.github.com/orgs/blosxom-fanatics/members?callback=listMembers"></script>
   </body>
 </html>
