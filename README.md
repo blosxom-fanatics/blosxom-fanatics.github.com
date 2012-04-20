@@ -1,4 +1,4 @@
-blosxom-fanatics.github.com
-===========================
+Blosxom Fanatics
+================
 
-GitHub pages for Blosxom Fanatics.
+http://blosxom-fanatics.github.com/

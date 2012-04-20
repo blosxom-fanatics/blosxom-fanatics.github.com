@@ -1,0 +1,25 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+h1 a {
+  margin: -55px 0 0 -55px;
+  padding: 0;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 110px;
+  height: 110px;
+  overflow: hidden;
+}
+
+h1 a:before {
+  width: 110px;
+  height: 110px;
+  content: url("../img/blosxom.png");
+}
