@@ -5,6 +5,7 @@ body {
   line-height: 1;
   background-image: url("../img/grid.png");
   background-position: center top;
+  font-family: "Georgia", serif;
 }
 
 a {
