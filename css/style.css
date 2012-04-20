@@ -63,3 +63,34 @@ h1 a:before {
   background-repeat: no-repeat;
   content: "\00a0";
 }
+
+.join {
+  margin: 62px 0 0 0;
+  padding: 7px;
+  text-align: center;
+}
+
+.join a {
+  border: 1px solid #d2d2d2;
+  border-radius: 3px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+  width: 110px;
+  height: 46px;
+  line-height: 46px;
+  display: inline-block;
+  color: #666;
+  background-color: #ededed;
+  background-image: -moz-linear-gradient(#f6f6f6, #e4e4e4);
+  background-image: -webkit-linear-gradient(#f6f6f6, #e4e4e4);
+  background-image: -o-linear-gradient(#f6f6f6, #e4e4e4);
+  background-image: -ms-linear-gradient(#f6f6f6, #e4e4e4);
+  background-image: linear-gradient(#f6f6f6, #e4e4e4);
+  text-decoration: none;
+  text-shadow: 0 1px 0 #fff;
+}
+
+.join a:active {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  position: relative;
+  top: 1px;
+}
