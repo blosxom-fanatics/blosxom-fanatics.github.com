@@ -1,5 +1,5 @@
 body {
-  margin: 0 auto;
+  margin: 0 auto 62px auto;
   padding: 0;
   max-width: 744px;
   line-height: 1;
@@ -44,6 +44,7 @@ h1 a:before {
   margin: 0;
   padding: 7px;
   display: inline-block;
+  vertical-align: top;
 }
 
 #members li a {
