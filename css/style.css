@@ -6,6 +6,10 @@ body {
   height: 100%;
 }
 
+body {
+  background-image: url("../img/grid.png");
+}
+
 h1 {
   margin: -55px 0 0 0;
   padding: 0;
