@@ -20,6 +20,8 @@
           '<ul>'
         ];
 
+        res.data = shuffleArray(res.data);
+
         for (var i = 0, l = res.data.length; i < l; i+=1) {
           var member = res.data[i],
             angle = 30 * i;
@@ -34,6 +36,20 @@
 
         ul.push('</ul>');
         document.getElementById('members').innerHTML = ul.join('');
+      };
+
+      var shuffleArray = function (a) {
+        var i = a.length;
+
+        while (--i) {
+          var j = Math.floor(Math.random() * (i + 1));
+          if (i == j) continue;
+          var k = a[i];
+          a[i] = a[j];
+          a[j] = k;
+        }
+
+        return a;
       };
     </script>
     <script src="https://api.github.com/orgs/blosxom-fanatics/members?callback=listMembers"></script>
